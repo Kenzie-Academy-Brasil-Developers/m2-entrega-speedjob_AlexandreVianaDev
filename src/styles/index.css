@@ -8,7 +8,7 @@ header {
 }
 
 header > .container {
-    width: 400px;
+    width: 500px;
     max-width: 100%;
     height: 400px;
     display: flex;
@@ -45,25 +45,29 @@ h1 > span {
 
 .nav {
     width: 90%;
-
     margin: 0 auto;
+}
 
+.nav > ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.nav > button {
+.nav > ul > li > a {
     background-color: transparent;
     color: var(--color-white);
     border: 2px solid var(--color-white);
     border-radius: var(--radius-4);
     font-size: var(--font-text-1);
-
     width: 100%;
     padding: 8px 16px;
-
     display: block;
+}
+
+.nav > ul > li > a:hover {
+    background-color: var(--color-white);
+    color: var(--color-grey-2)
 }
 
 .section__frontend, .section__backend {
@@ -74,7 +78,9 @@ h1 > span {
 .section__title {
     color: var(--color-black);
     padding: 20px;
+    margin-top: 40px;
 }
+
 
 .section__list--cards {
     display: flex;
@@ -87,8 +93,16 @@ h1 > span {
     border-radius: var(--radius-2);
     padding: 32px 24px;
     margin-left: 20px;
+    margin-bottom: 8px;
     width: 340px;
     min-width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.card__top {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -118,32 +132,23 @@ h1 > span {
     font-size: var(--font-text-2);
 }
 
-.card__category > span {
+.card__category--frontEnd > span, .card__category--backEnd > span {
     color: var(--color-blue-2);
     background-color: var(--color-grey-transparency);
     font-size: var(--font-text-3);
     padding: 2px 8px;
+    border-radius: 2px;
 }
 
 @media screen and (min-width: 768px) {
-    .nav {
+    .nav > ul {
         flex-direction: row;
         justify-content: center;
     }
-    .nav > button {
+    .nav > ul > li {
         width: fit-content;
         padding: 8px 24px;
     }
-    .section__title {
-        margin-top: 40px;
-    }
-    /* .section__list--cards {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        overflow-x: none;
-        width: fit-content;
-    } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -154,7 +159,7 @@ h1 > span {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-        overflow-x: none;
+        overflow-x: hidden;
         width: fit-content;
     }
 } 
