@@ -1,0 +1,65 @@
+:root {
+  --color-blue-1: #484FFB;
+  --color-blue-2: #4D52D3;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-white-transparency: rgba(255, 255, 255, 0.8);
+  --color-grey-1: #121010;
+  --color-grey-2: #212529;
+  --color-grey-3: #495057;
+  --color-grey-4: #E9ECEF;
+  --color-grey-5: #e6e8eb;
+  --color-grey-transparency: rgba(77, 82, 211, 0.1);
+
+
+  --font-title-1: 2.25rem;
+  --font-text-1: 1rem;
+  --font-text-2: 0.75rem;
+  --font-text-3: 0.625rem;
+
+  --font-weight-1: 600;
+  --font-weight-2: 500;
+  --font-weight-3: 400;
+
+  --radius-1: 4px;
+  --radius-2: 8px;
+  --radius-3: 16px;
+  --radius-4: 32px;
+
+  --size-1: 56px;
+  --size-2: 48px;
+  --size-3: 36px;
+
+  --gap-1: 32px;
+  --gap-2: 28px;
+  --gap-3: 24px;
+  --gap-4: 20px;
+  --gap-5: 16px;
+
+  --paddingInlineButton: 32px;
+  --paddingLeft: 22px;
+
+  --container-1: 1200px;
+  --container-2: 900px;
+
+  --font-title: 'Poppins', sans-serif;
+  --font-family-1: 'Inter', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: var(--container-1);
+  margin: 0 auto;
+}
+
+body {
+  line-height: 150%;
+  background-color: var(--color-grey-4);
+}
+
+body, button {
+  font-family: var(--font-family-1);
+}
